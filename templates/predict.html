@@ -1,20 +1,18 @@
 <html>
     <head>
-        <link rel="stylesheet" href="static/css1.css"> 
+        <link rel="stylesheet" href="static/css2.css"> 
     </head>
 <body>
     <div class="Main-box">
         <div class="Caption-box">
           <figure class="snip1336">
             <div class="image box">
-          <label for="img"><span class="label">---Image Loaded---</span></label>
   
-          <input type="submit" id="submit" value="Here is your Caption">
         </form>
         </div>
        
-                <img src="{{url_for('static', filename='files.jpg')}}" alt="image" height=340px id="output" width="250px">
-                
+                <img src="{{url_for('static', filename='files.jpg')}}" alt="image" id="output" >
+
                 <figcaption>
                     <h2>Predicted<span>caption:</span></h2>
                     <div id="prediction"><p>       {{final}}      </p></div>
