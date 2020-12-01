@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 .snip1336 {
   font-family: 'Roboto', Arial, sans-serif;
-  /* position: relative; */
+  position: relative;
   position: absolute;
   overflow: hidden;
   margin: 10px;
@@ -14,13 +14,13 @@
   text-align:center;
   font-size: medium;
   line-height: 1.4em;
-  background-color: #141414;
+  /* background-color: #141414; */
   left: 20%;
   margin-top: 7%;
-  box-shadow: 5px 5px 20px rgb(255, 255, 255);
-  /* border-style: solid;
-  border-color: #ff00d4; 
-border-radius: 10px;  */
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
+
+background-image: linear-gradient(to right bottom,#544eafbd,#22aeb8);
+
 
 }
 .snip1336 * {
@@ -30,7 +30,7 @@ border-radius: 10px;  */
   transition: all 0.25s ease;
 }
 .snip1336 img {
-  max-width: 90%;
+  max-width: 50%;
   position: relative;
 
   vertical-align: top;
@@ -43,19 +43,21 @@ border-radius: 10px;  */
   margin-bottom: 10px;
   box-shadow: 0 0 10px rgb(39, 152, 197);
   position: relative;
-  max-width: 90%;
+
+  cursor: pointer;
 
 
 
-/* border-style: solid;
-border-color: #ff00d4; 
-border-radius: 10px;   */
-
-  
 }
+.snip1336 img:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
 .snip1336 figcaption {
   width: 40%;
-  background-color: #141414;
+  /* background-color: #141414; */
   padding: 25px;
   left: 55%;
   top: 20%;
@@ -86,9 +88,11 @@ border-radius: 10px;   */
 }
 body{
   
-    background-image: url(back-3.jpg);
-}
+  /* background-image: url(back-3.jpg); */
+  background-color: #ece0e8;
+  
 
+}
 
 
 
