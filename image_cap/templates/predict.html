@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="static/css2.css"> 
+    </head>
+<body>
+
+    <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <div class="Main-box">
+        <div class="Caption-box">
+          <figure class="snip1336">
+            <div class="image box">
+  
+        </form>
+        </div>
+       
+                <img src="{{url_for('static', filename='files.jpg')}}" alt="image" id="output" >
+
+                <figcaption>
+                    <h2>Predicted<span>caption:</span></h2>
+                    <div id="prediction"><p id="text">       {{final}}      </p></div>
+                </figcaption>
+            </div>
+      <!-- {{final}} -->
+    </figure>
+    </div>
+    </div>
+
+    <script>
+        function speakText(){
+            var text = document.getElementById('text').textContent;
+            responsiveVoice.speak(text);
+            
+        }
+        speakText();
+  
+    </script>
+
+</body>
+</html>

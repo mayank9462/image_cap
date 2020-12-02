@@ -1,0 +1,44 @@
+<html>
+    
+
+    <!-- <form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'> -->
+        <!-- <input type="file" name='file1'> -->
+
+
+<!-- <input type="submit"> -->
+
+<!-- </form> -->
+
+
+<head>
+    <link rel="stylesheet" href="static/css1.css"> 
+    <script>
+        var loadFile = function(event) {
+          var image = document.getElementById('output');
+          image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        </script>
+</head>
+<body>
+  <div class="Main-box">
+      <div class="Caption-box">
+        <figure class="snip1336">
+          <div class="image box">
+            <form action="{{url_for('after')}}" method='POST' enctype='multipart/form-data'>
+                <label for="img"><span class="label">Select image</span></label>
+                <input type="file" name='file1' id="img" style="display: none;" onchange="loadFile(event)">
+                <input type="submit" id="submit" value="Get Caption">
+            </form>
+      </div>
+        
+      <img src="https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg" id=output alt="sample87" />
+        <figcaption>
+          <img src="static/log.png" id="logo">
+        </figcaption>
+      </figure>
+     </div>
+      </div>
+</body>
+
+
+</html>
